@@ -7,6 +7,7 @@ use App\Http\Livewire\BrandComponent;
 use App\Http\Livewire\CampaignComponent;
 use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\ClientComponent;
+use App\Http\Livewire\Command;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\HomePage;
 use App\Http\Livewire\InformationComponent;
@@ -52,6 +53,7 @@ Route::group([
     Route::get('her-categories', CategoryComponent::class)->name('categories');
     Route::get('her-campaigns', CampaignComponent::class)->name('campaigns');
     Route::get('her-social-media', SocialComponent::class)->name('socialMedia');
+    Route::get('commands', Command::class)->name('commands');
 });
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');

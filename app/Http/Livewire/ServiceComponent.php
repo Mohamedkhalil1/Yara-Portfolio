@@ -57,6 +57,7 @@ class ServiceComponent extends Component
     public function delete($serviceId)
     {
         Service::whereKey($serviceId)->delete();
+        $this->service = new Service();
         $this->successNotification('Service Has been deleted successfully !');
     }
 

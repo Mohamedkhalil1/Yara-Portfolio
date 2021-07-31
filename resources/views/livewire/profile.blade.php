@@ -2,7 +2,6 @@
     @section('title',$pageTitle)
     <x-base.card title="{{ $pageTitle }}">
         <x-form.form action="save" :isHorizontal="true">
-
             <div class="col-md-4">
                 <x-form.label title="Name"/>
             </div>
