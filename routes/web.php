@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Livewire\Auth\Login;
-use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\BrandComponent;
 use App\Http\Livewire\CampaignComponent;
 use App\Http\Livewire\CategoryComponent;
@@ -15,9 +14,7 @@ use App\Http\Livewire\Profile;
 use App\Http\Livewire\Profile\Show;
 use App\Http\Livewire\ServiceComponent;
 use App\Http\Livewire\SocialComponent;
-use App\Http\Livewire\Transaction\AdvancedIndex;
-use App\Http\Livewire\Transaction\Index;
-use App\Http\Livewire\User\Create;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
